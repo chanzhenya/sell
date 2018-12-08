@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.109.20.162:3306/sell?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+  jpa:
+    show-sql: true
+    open-in-view: true
+  kafka:
+    producer:
+      bootstrap-servers: 120.77.180.187:9092
+server:
+  port: 8080
+  context-path: /sell
+  tomcat:
+    uri-encoding: UTF-8
